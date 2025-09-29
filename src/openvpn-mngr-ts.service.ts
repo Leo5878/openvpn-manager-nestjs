@@ -2,7 +2,7 @@ import { Injectable, Inject, Logger } from "@nestjs/common";
 import { EventEmitter } from "node:events";
 import { OpenvpnApi } from "@app/openvpn-mngr-ts/openvpn/openvpn-api";
 import { Connect } from "@app/openvpn-mngr-ts/openvpn/connect";
-import { CustomEventType } from "../../../src/adapters/openvpn/event-responses.types";
+import { CustomEventType } from "@app/openvpn-mngr-ts/openvpn/event-responses.types";
 import { OPENVPN_OPTIONS } from "@app/openvpn-mngr-ts/openvpn.constants";
 
 export interface OpenvpnServiceOptions {
