@@ -5,8 +5,8 @@ import {
 } from "./openvpn-mngr-ts.service";
 import { InjectionToken } from "@nestjs/common/interfaces/modules/injection-token.interface";
 import { OptionalFactoryDependency } from "@nestjs/common/interfaces/modules/optional-factory-dependency.interface";
-import { OpenvpnManager } from "@app/openvpn-mngr-ts/openvpn.manager";
-import { OPENVPN_OPTIONS } from "@app/openvpn-mngr-ts/openvpn.constants";
+import { OpenvpnManager } from "@app/openvpn-mngr-ts/openvpn-manager-nestjs/openvpn.manager";
+import { OPENVPN_OPTIONS } from "@app/openvpn-mngr-ts/openvpn-manager-nestjs/openvpn.constants";
 
 @Module({})
 export class OpenvpnModuleImpl {
