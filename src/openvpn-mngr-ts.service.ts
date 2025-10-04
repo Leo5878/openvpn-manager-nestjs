@@ -1,10 +1,10 @@
 import { Injectable, Inject } from "@nestjs/common";
 import { EventEmitter } from "node:events";
-import { OpenvpnApi } from "@openvpn-manager/openvpn-api";
-import { Connect } from "@openvpn-manager/connect";
+import { OpenvpnApi } from "@app/openvpn-mngr-ts/openvpn-manager/openvpn-api";
+import { Connect } from "@app/openvpn-mngr-ts/openvpn-manager/core";
 import { OPENVPN_OPTIONS } from "./openvpn.constants";
 import { CustomEventType } from "@openvpn-manager/event-responses.types";
-import { NestLoggerAdapter } from "@app/openvpn-mngr-ts/openvpn-manager-nestjs/logger-adapter";
+import { NestLoggerAdapter } from "@app/openvpn-mngr-ts/openvpn-manager-nestjs/logger.adapter";
 
 export interface OpenvpnServiceOptions {
   connections: Array<Connect>;
