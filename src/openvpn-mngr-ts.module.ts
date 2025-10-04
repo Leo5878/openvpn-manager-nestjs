@@ -1,4 +1,4 @@
-import { Module, DynamicModule, FactoryProvider } from "@nestjs/common";
+import { Module, DynamicModule, FactoryProvider, Logger } from "@nestjs/common";
 import {
   OpenvpnService,
   OpenvpnServiceOptions,
@@ -7,6 +7,7 @@ import { InjectionToken } from "@nestjs/common/interfaces/modules/injection-toke
 import { OptionalFactoryDependency } from "@nestjs/common/interfaces/modules/optional-factory-dependency.interface";
 import { OpenvpnManager } from "@app/openvpn-mngr-ts/openvpn-manager-nestjs/openvpn.manager";
 import { OPENVPN_OPTIONS } from "@app/openvpn-mngr-ts/openvpn-manager-nestjs/openvpn.constants";
+import { NestLoggerAdapter } from "./logger.adapter";
 
 @Module({})
 export class OpenvpnModuleImpl {
@@ -25,7 +26,13 @@ export class OpenvpnModuleImpl {
     return <DynamicModule>{
       module: OpenvpnModuleImpl,
       imports: options.imports || [],
-      providers: [configProvider, OpenvpnService, OpenvpnManager],
+      providers: [
+        configProvider,
+        OpenvpnService,
+        OpenvpnManager,
+        Logger,
+        NestLoggerAdapter,
+      ],
       exports: [configProvider, OpenvpnService, OpenvpnManager],
     };
   }

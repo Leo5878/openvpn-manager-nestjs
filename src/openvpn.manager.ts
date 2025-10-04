@@ -1,5 +1,5 @@
 import { Inject, Injectable, OnApplicationBootstrap } from "@nestjs/common";
-import { OpenvpnService } from "@app/openvpn-mngr-ts/openvpn-manager-nestjs/openvpn-mngr-ts.service"
+import { OpenvpnService } from "@app/openvpn-mngr-ts/openvpn-manager-nestjs/openvpn-mngr-ts.service";
 
 @Injectable()
 export class OpenvpnManager implements OnApplicationBootstrap {
