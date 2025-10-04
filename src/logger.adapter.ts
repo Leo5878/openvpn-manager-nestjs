@@ -2,7 +2,7 @@ import { Injectable, Logger } from "@nestjs/common";
 import { LoggerAdapter } from "@openvpn-manager/core";
 
 @Injectable()
-export class NestLoggerAdapter implements LoggerAdapater {
+export class NestLoggerAdapter implements LoggerAdapter {
   constructor(private readonly logger: Logger) {}
 
   info(message: string, context?: string) {

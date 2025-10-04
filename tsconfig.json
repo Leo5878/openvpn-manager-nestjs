@@ -18,22 +18,5 @@
     "strictBindCallApply": true,
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
-    "paths": {
-      "@openvpn-manager/*": [
-        "src/openvpn-mngr-ts/openvpn-manager/src/*"
-      ],
-      "@app/openvpn-mngr-ts": [
-        "src/openvpn-mngr-ts"
-      ],
-      "@app/openvpn-mngr-ts/openvpn-manager/*": [
-        "src/openvpn-mngr-ts/openvpn-manager/src/*"
-      ],
-      "@app/openvpn-mngr-ts/openvpn-manager-nestjs/*": [
-        "src/openvpn-mngr-ts/openvpn-manager-nestjs/src/*"
-      ],
-      "@app/openvpn-mngr-ts/*": [
-        "src/openvpn-mngr-ts/*"
-      ]
-    }
   }
 }
