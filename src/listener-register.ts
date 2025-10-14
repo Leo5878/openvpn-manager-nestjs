@@ -1,7 +1,7 @@
 import { EventEmitter } from "node:events";
 import { CustomEventType } from "@openvpn-manager/event-responses.types";
 
-export function registerOpenVpnListeners(
+export function registerOpenvpnListeners(
   instance: any,
   emitter: EventEmitter<CustomEventType>,
 ) {
