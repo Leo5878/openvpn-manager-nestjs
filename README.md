@@ -16,7 +16,8 @@ This package provides dependency injection and module configuration for working 
 
 To get started, register the module in your NestJS application:
 
-> [!NOTE] For detailed setup instructions, refer to the original repository.
+> [!NOTE]
+> For detailed setup instructions, refer to the original repository.
 > The only difference here is how the **logger** is configured — see examples below.
 
 ```ts
