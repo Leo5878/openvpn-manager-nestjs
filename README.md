@@ -51,7 +51,6 @@ There are two main ways to handle OpenVPN events in NestJS:
 
 Both are valid; decorators provide a clean declarative style, while direct emitter usage offers more flexibility and type inference.
 
----
 
 ## 1. Decorator approach
 
