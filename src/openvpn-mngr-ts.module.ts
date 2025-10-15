@@ -18,7 +18,7 @@ export class OpenvpnModuleImpl {
   }): DynamicModule {
     // Эти опции используются в сервисе openvpn, чтобы конфигурацию пробросить внутрь
     const configProvider: FactoryProvider<OpenvpnServiceOptions> = {
-      provide: OPENVPN_OPTIONS, // Это нужно, чтобы определить конфигурацию внутри сервиса
+      provide: OPENVPN_OPTIONS,
       useFactory: options.useFactory,
       inject: options.inject || [],
     };

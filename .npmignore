@@ -4,3 +4,4 @@ docs
 src
 tsconfig.json
 examples
+tsconfig.build.json
