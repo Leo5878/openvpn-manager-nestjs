@@ -1,11 +1,11 @@
 {
-  "name": "openvpn-manager-nestjs",
+  "name": "@ad0nis/openvpn-manager-nestjs",
   "version": "0.1.0",
   "repository": "git@github.com:Leo5878/openvpn-manager-nestjs.git",
   "description": "Nestjs module for integrating with openvpn-manager-ts ",
   "author": "leonardo5878",
   "license": "Apache-2.0",
-  "main": "./dist/index.js",
+  "main": "dist/index.js",
   "publishConfig": {
     "access": "public"
   },
@@ -24,7 +24,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@ad0nis/openvpn-manager": "^0.1.5"
+    "@ad0nis/openvpn-manager": "^0.1.6"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
