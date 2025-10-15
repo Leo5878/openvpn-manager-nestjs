@@ -1,5 +1,4 @@
-import { EventMap } from "@openvpn-manager/event-responses.types";
-import { Event } from "@openvpn-manager/Event";
+import { EventMap, Event } from "@ad0nis/openvpn-manager";
 
 type EventKey = (typeof Event)[keyof typeof Event];
 

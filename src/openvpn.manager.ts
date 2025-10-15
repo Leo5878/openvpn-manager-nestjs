@@ -1,12 +1,11 @@
-import { Inject, Injectable, OnApplicationBootstrap } from "@nestjs/common";
-import { OpenvpnService } from "@app/openvpn-mngr-ts/openvpn-manager-nestjs/openvpn-mngr-ts.service";
-import { Logger } from "nestjs-pino";
+import { Inject, Injectable, OnApplicationBootstrap, Logger } from "@nestjs/common";
+import { OpenvpnService } from "./openvpn-mngr-ts.service";
 
 @Injectable()
 export class OpenvpnManager implements OnApplicationBootstrap {
   constructor(
     @Inject() private clients: OpenvpnService,
-    @Inject() private readonly logger: Logger,
+    @Inject() private logger: Logger,
   ) {}
   async onApplicationBootstrap() {
     for (const c of this.clients.instances.values()) {

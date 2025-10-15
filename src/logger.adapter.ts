@@ -1,5 +1,5 @@
 import { Injectable, Logger } from "@nestjs/common";
-import { LoggerAdapter } from "@app/openvpn-mngr-ts/openvpn-manager/core";
+import { LoggerAdapter } from "@ad0nis/openvpn-manager";
 
 @Injectable()
 export class NestLoggerAdapter implements LoggerAdapter {
