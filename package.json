@@ -73,6 +73,6 @@
     ]
   },
   "dependencies": {
-    "@ad0nis/openvpn-manager": "file:/home/yoh/projects/openvpn-manager"
+    "@ad0nis/openvpn-manager": "^0.1.5"
   }
 }

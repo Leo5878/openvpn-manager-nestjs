@@ -2,11 +2,10 @@
 # yarn lockfile v1
 
 
-"@ad0nis/openvpn-manager@file:../openvpn-manager":
-  version "0.1.4"
-
-"@ad0nis/openvpn-manager@file:/home/yoh/projects/openvpn-manager":
-  version "0.1.4"
+"@ad0nis/openvpn-manager@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@ad0nis/openvpn-manager/-/openvpn-manager-0.1.5.tgz#438909133d6ba7891cf53f95596272c8767fc3c5"
+  integrity sha512-ed14Bjx1ashSGbBfBU10fCird3ZXdQKNkE/io1aKTs7+PGcOyRpbXpkqX6ZvAoPw+JKDy6u7xv0ifK0FkOqJNQ==
 
 "@angular-devkit/core@19.2.15":
   version "19.2.15"
