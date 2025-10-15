@@ -1,0 +1,6 @@
+dist/**/*.spec.*
+yarn.lock
+docs
+src
+tsconfig.json
+examples
