@@ -1,11 +1,12 @@
 import { Inject, Injectable, Logger } from "@nestjs/common";
+import { Cl, ConnectionClient } from "@ad0nis/openvpn-manager";
 import {
-  OpenvpnEvent,
   registerOpenvpnListeners,
   OpenvpnService,
+  OpenvpnEvent,
 } from "@ad0nis/openvpn-manager-nestjs";
+
 // import { Logger } from "nestjs-pino";
-import { Cl, ConnectionClient } from "@ad0nis/openvpn-manager";
 
 @Injectable()
 export class OpenvpnControllerDecorators {
