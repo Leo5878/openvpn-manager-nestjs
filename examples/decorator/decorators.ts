@@ -1,12 +1,11 @@
 import { Inject, Injectable, Logger } from "@nestjs/common";
-import { OpenvpnEvent } from "openvpn-manager-nestjs/event-decorators";
-// import { Logger } from "nestjs-pino";
-import { registerOpenvpnListeners } from "openvpn-manager-nestjs/listener-register";
 import {
-  Cl,
-  ConnectionClient,
-} from "openvpn-manager-nestjs/event-responses.types";
-import { OpenvpnService } from "openvpn-manager-nestjs/openvpn-mngr-ts.service";
+  OpenvpnEvent,
+  registerOpenvpnListeners,
+  OpenvpnService,
+} from "@ad0nis/openvpn-manager-nestjs";
+// import { Logger } from "nestjs-pino";
+import { Cl, ConnectionClient } from "@ad0nis/openvpn-manager";
 
 @Injectable()
 export class OpenvpnControllerDecorators {

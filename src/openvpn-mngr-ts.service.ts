@@ -1,6 +1,10 @@
-import { EventEmitter } from "node:events";
 import { Injectable, Inject } from "@nestjs/common";
-import { OpenvpnManager, CustomEventType, Connect } from "@ad0nis/openvpn-manager";
+import { EventEmitter } from "node:events";
+import {
+  OpenvpnManager,
+  Connect,
+  CustomEventType,
+} from "@ad0nis/openvpn-manager";
 import { OPENVPN_OPTIONS } from "./openvpn.constants";
 import { NestLoggerAdapter } from "./logger.adapter";
 

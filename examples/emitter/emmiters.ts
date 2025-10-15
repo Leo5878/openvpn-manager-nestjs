@@ -1,11 +1,15 @@
-import { Inject, Injectable, OnApplicationBootstrap } from "@nestjs/common";
-import { OpenvpnService } from "@app/openvpn-mngr-ts/openvpn-manager-nestjs/openvpn-mngr-ts.service";
-import { Logger } from "nestjs-pino";
-import { Cl } from "openvpn-manager/event-responses.types";
 import {
+  Inject,
+  Injectable,
+  OnApplicationBootstrap,
+  Logger,
+} from "@nestjs/common";
+import { OpenvpnService } from "@app/openvpn-mngr-ts/openvpn-manager-nestjs/openvpn-mngr-ts.service";
+import {
+  Cl,
   ClientDisconnect,
   ConnectionClient,
-} from "@openvpn-manager/event-responses.types";
+} from "@ad0nis/openvpn-manager";
 
 @Injectable()
 export class OpenvpnControllerEmitter implements OnApplicationBootstrap {
