@@ -4,7 +4,7 @@ A NestJS integration module for [openvpn-manager](https://github.com/Leo5878/ope
 
 This package provides dependency injection and module configuration for working with OpenVPN through `openvpn-manager-ts` in NestJS applications.
 
-# Features
+## Features
 
 * Seamless integration with `openvpn-manager`
 * Type-safe event handling
@@ -12,7 +12,7 @@ This package provides dependency injection and module configuration for working 
 * Optional custom event emitter and logger injection
 
 
-# Quick Start
+## Quick Start
 
 To get started, register the module in your NestJS application:
 
@@ -43,7 +43,7 @@ To get started, register the module in your NestJS application:
 export class AppModule {}
 ```
 
-# Controller Integration
+## Controller Integration
 
 There are two main ways to handle OpenVPN events in NestJS:
 
@@ -53,7 +53,7 @@ There are two main ways to handle OpenVPN events in NestJS:
 Both are valid; decorators provide a clean declarative style, while direct emitter usage offers more flexibility and type inference.
 
 
-## 1. Decorator approach
+### 1. Decorator approach
 
 Full example: [examples/decorator](examples/decorator)
 
@@ -89,7 +89,7 @@ The `registerOpenvpnListeners()` function automatically registers all class meth
 You can use the built-in NestJS Logger or inject your own custom logger if needed.
 Passing `OpenvpnService` is optional — if you have your own event emitter, just pass it manually.
 
-## 2. Event-driven approach
+### 2. Event-driven approach
 
 Full example: [examples/emitter](examples/emitter)
 
@@ -121,7 +121,7 @@ export class ExternalService implements OnApplicationBootstrap {
 }
 ```
 
-# Additional Information
+## Additional Information
 
 You can find all available types and methods in the
 [main openvpn-manager repository](https://github.com/Leo5878/openvpn-manager).
