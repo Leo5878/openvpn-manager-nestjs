@@ -20,6 +20,16 @@
 > Подробные инструкции по настройке смотрите в оригинальном репозитории.
 > Единственное отличие — способ передачи **логгера** (пример ниже).
 
+### npm
+```bash
+npm install @ad0nis/openvpn-manager-nestjs`
+```
+
+### yarn
+```bash
+yarn add @ad0nis/openvpn-manager-nestj
+```
+
 ```ts
 @Module({
   imports: [

@@ -20,6 +20,17 @@ To get started, register the module in your NestJS application:
 > For detailed setup instructions, refer to the original repository.
 > The only difference here is how the **logger** is configured — see examples below.
 
+## install
+### npm
+```bash
+npm install @ad0nis/openvpn-manager-nestjs`
+```
+
+### yarn
+```bash
+yarn add @ad0nis/openvpn-manager-nestj
+```
+
 ```ts
 @Module({
   imports: [
