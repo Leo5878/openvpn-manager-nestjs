@@ -22,12 +22,12 @@
 
 ### npm
 ```bash
-npm install @ad0nis/openvpn-manager-nestjs`
+npm install @ad0nis/openvpn-manager-nestjs
 ```
 
 ### yarn
 ```bash
-yarn add @ad0nis/openvpn-manager-nestj
+yarn add @ad0nis/openvpn-manager-nestjs
 ```
 
 ```ts
