@@ -1,13 +1,17 @@
 {
   "name": "@ad0nis/openvpn-manager-nestjs",
   "version": "0.1.0",
-  "repository": "git@github.com:Leo5878/openvpn-manager-nestjs.git",
+  "url": "https://github.com/Leo5878/openvpn-manager-nestjs",
   "description": "Nestjs module for integrating with openvpn-manager-ts ",
   "author": "leonardo5878",
   "license": "Apache-2.0",
   "main": "dist/index.js",
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Leo5878/openvpn-manager-nestjs"
   },
   "scripts": {
     "build": "nest build",
