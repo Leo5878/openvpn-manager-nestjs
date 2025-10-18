@@ -28,7 +28,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@ad0nis/openvpn-manager": "^0.1.6"
+    "@ad0nis/openvpn-manager": "^0.2.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
