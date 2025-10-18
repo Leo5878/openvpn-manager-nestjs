@@ -4,7 +4,7 @@ import {
   OnApplicationBootstrap,
   Logger,
 } from "@nestjs/common";
-import { OpenvpnService } from "./openvpn-mngr-ts.service";
+import { OpenvpnService } from "./openvpn.service";
 
 @Injectable()
 export class OpenvpnManager implements OnApplicationBootstrap {

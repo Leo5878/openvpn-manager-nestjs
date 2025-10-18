@@ -1,1 +1,2 @@
 export const OPENVPN_OPTIONS = "OPTIONS";
+export const OPENVPN_SERVICE = "SERVICE"
