@@ -4,7 +4,7 @@ import {
   OnApplicationBootstrap,
   Logger,
 } from "@nestjs/common";
-import { OpenvpnService } from "@app/openvpn-mngr-ts/openvpn-manager-nestjs/openvpn-mngr-ts.service";
+import { OpenvpnService } from "@ad0nis/openvpn-manager-nestjs";
 import {
   Cl,
   ClientDisconnect,

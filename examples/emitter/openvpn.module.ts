@@ -1,6 +1,7 @@
 import { Module } from "@nestjs/common";
 import { OpenvpnControllerEmitter } from "./emmiters";
-import { OpenvpnModuleImpl } from "@app/openvpn-mngr-ts/openvpn-manager-nestjs/openvpn-mngr-ts.module";
+import { OpenvpnModuleImpl } from "@ad0nis/openvpn-manager-nestjs";
+
 // import { emitter } from "./emitter";
 
 @Module({
